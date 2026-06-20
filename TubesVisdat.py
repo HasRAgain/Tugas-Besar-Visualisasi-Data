@@ -262,6 +262,30 @@ for col, (_, row), icon in zip(roadmap_cols, roadmap_df.iterrows(), icons):
         st.markdown(f"### {icon} {row['Tahun']}")
         st.write(row["Milestone"])
 
+st.markdown("""
+<style>
+    /* Sidebar */
+    section[data-testid="stSidebar"] {
+        background-color: #0b1320 !important;
+    }
+
+    /* Semua teks di sidebar */
+    section[data-testid="stSidebar"] * {
+        color: #ffffff !important;
+    }
+
+    /* Slider */
+    section[data-testid="stSidebar"] .stSlider label {
+        color: #ffffff !important;
+    }
+
+    /* Multiselect */
+    section[data-testid="stSidebar"] .stMultiSelect label {
+        color: #ffffff !important;
+    }
+</style>
+""", unsafe_allow_html=True)
+
 st.markdown("---")
 st.caption("""
 Sumber:
